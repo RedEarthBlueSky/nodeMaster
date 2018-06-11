@@ -1,0 +1,4 @@
+# ignore config files
+*.config
+.gitignore
+/node_modules

@@ -1,19 +1,16 @@
-/*
-  *  Title:  Jokes index file
+/**  Title:  Jokes index file
   *  Description: Joke library
   *  Author:  Ian Salt
-  *  Date: 11/06/2018
-  *
-  */
+  *  Date: 11/06/2018 */
 
 // Dependencies
 const fs = require('fs');
 
-//  App object
-const jokes = {};
+const jokes = {}; //  App object
 
-//  Get all teh jokes and return them to the user
+//  Get all the jokes and return them to the user
 jokes.allJokes = function () {
+
   // Read the text file containing the jokes
       const fileContents = fs.readFileSync(`${__dirname}/jokes.txt`, 'utf8');
 
